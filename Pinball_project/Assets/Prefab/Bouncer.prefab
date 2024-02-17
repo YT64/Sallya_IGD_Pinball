@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1529458658047081036
+--- !u!1 &1448179195068163508
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8299877283248564713}
-  - component: {fileID: 4857244259682549520}
-  - component: {fileID: 3336221278798164947}
-  - component: {fileID: -8675169466036715816}
-  - component: {fileID: 7547310985333659577}
+  - component: {fileID: 71746094130971874}
+  - component: {fileID: 1568354371209819508}
+  - component: {fileID: 3980771124405312679}
   m_Layer: 0
-  m_Name: Ball
-  m_TagString: Untagged
+  m_Name: Bouncer
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8299877283248564713
+--- !u!4 &71746094130971874
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529458658047081036}
+  m_GameObject: {fileID: 1448179195068163508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4857244259682549520
+--- !u!212 &1568354371209819508
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529458658047081036}
+  m_GameObject: {fileID: 1448179195068163508}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,24 +74,24 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8854646aa042f234f8ec2adb168a9d35, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f925c1beaa0852e43b0529d299eb7d16, type: 3}
+  m_Color: {r: 0.42075467, g: 0.52630943, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.76, y: 0.76}
+  m_Size: {x: 1.29, y: 1.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3336221278798164947
-CircleCollider2D:
+--- !u!60 &3980771124405312679
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529458658047081036}
+  m_GameObject: {fileID: 1448179195068163508}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: ca04370e5ed260c4ba70c5b9ff519014, type: 2}
@@ -120,44 +118,31 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.38
---- !u!50 &-8675169466036715816
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529458658047081036}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: ca04370e5ed260c4ba70c5b9ff519014, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!114 &7547310985333659577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529458658047081036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd7789321ce2634493bd96a52e730d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.29, y: 1.29}
+    newSize: {x: 1.29, y: 1.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.645, y: 0.16499999}
+      - {x: 0.625, y: 0.265}
+      - {x: 0.53499997, y: 0.415}
+      - {x: 0.355, y: 0.59499997}
+      - {x: 0.255, y: 0.645}
+      - {x: -0.225, y: 0.645}
+      - {x: -0.36499998, y: 0.615}
+      - {x: -0.625, y: 0.375}
+      - {x: -0.645, y: 0.255}
+      - {x: -0.645, y: -0.275}
+      - {x: -0.42499998, y: -0.545}
+      - {x: -0.265, y: -0.645}
+      - {x: 0.21499999, y: -0.645}
+      - {x: 0.385, y: -0.575}
+      - {x: 0.59499997, y: -0.355}
+      - {x: 0.645, y: -0.195}
+  m_UseDelaunayMesh: 0
